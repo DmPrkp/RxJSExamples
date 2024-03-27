@@ -24,12 +24,16 @@ console.log('This value is just after subscribe');
 
 
 
-// case 2
+// case 2 pipe change initial value
 const arr = [1, 2, 3]
 const obs$2 = of(...arr)
 
 obs$2.subscribe((x) => { arr.push(x + 3); console.log(x) })
 obs$2.subscribe(console.log)
 
+console.log('This value is just after subscribe case 2');
+
 const obs$3 = of(...arr)
 obs$3.subscribe(console.log)
+
+console.log(arr)

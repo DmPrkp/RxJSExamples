@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "npx tsx ./observables/observable.ts",
     "test": "jest --config package.json"
   },
   "dependencies": {
